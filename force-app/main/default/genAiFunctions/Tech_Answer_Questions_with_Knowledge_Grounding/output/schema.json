@@ -1,0 +1,14 @@
+{
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "knowledgeAnswer" : {
+      "title" : "knowledgeAnswer",
+      "description" : "Rich text of all the knowledge articles and citations to those articles that could match the question. Filter and summarize to provide the right response.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isDisplayable" : true,
+      "copilotAction:isUsedByPlanner" : true
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

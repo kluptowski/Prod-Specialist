@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BotVersion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>v1</fullName>
+    <articleAnswersGPTEnabled>false</articleAnswersGPTEnabled>
+    <botDialogs>
+        <botSteps>
+            <botMessages>
+                <message>Hi, I&apos;m an AI service assistant. How can I help you?</message>
+                <messageIdentifier>cb96694c-1699-4b7f-84c8-567a26061c01</messageIdentifier>
+            </botMessages>
+            <stepIdentifier>04f88761-a534-4ef4-9094-c9e1c1d36be0</stepIdentifier>
+            <type>Message</type>
+        </botSteps>
+        <botSteps>
+            <stepIdentifier>eae003f5-9f03-4c33-80c2-bd461b82b81c</stepIdentifier>
+            <type>Wait</type>
+        </botSteps>
+        <developerName>Welcome</developerName>
+        <isPlaceholderDialog>false</isPlaceholderDialog>
+        <label>Hi! I&apos;m your helpful bot.</label>
+        <showInFooterMenu>false</showInFooterMenu>
+    </botDialogs>
+    <botDialogs>
+        <botSteps>
+            <botMessages>
+                <message>Sorry, it looks like something has gone wrong.</message>
+                <messageIdentifier>21d05cd5-b367-401c-85a2-95132f2906d6</messageIdentifier>
+            </botMessages>
+            <stepIdentifier>896afcef-f929-4f26-b026-12bbd2c9ecdb</stepIdentifier>
+            <type>Message</type>
+        </botSteps>
+        <botSteps>
+            <stepIdentifier>c9f92105-5719-437c-be06-8bc07659b99c</stepIdentifier>
+            <type>Wait</type>
+        </botSteps>
+        <developerName>Error_Handling</developerName>
+        <isPlaceholderDialog>false</isPlaceholderDialog>
+        <label>Unfortunately, a system error occurred. Let us start again.</label>
+        <showInFooterMenu>false</showInFooterMenu>
+    </botDialogs>
+    <botDialogs>
+        <botSteps>
+            <botMessages>
+                <message>One moment while I connect you to the next available service representative.</message>
+                <messageIdentifier>0a72c8f2-d968-4dfc-8117-9b65db6671db</messageIdentifier>
+            </botMessages>
+            <stepIdentifier>9f541993-211f-49ed-8c80-1d48e70b35a6</stepIdentifier>
+            <type>Message</type>
+        </botSteps>
+        <botSteps>
+            <conversationSystemMessage>
+                <type>Transfer</type>
+            </conversationSystemMessage>
+            <stepIdentifier>687135c8-c7e7-49f2-a05b-bf54237c6634</stepIdentifier>
+            <type>SystemMessage</type>
+        </botSteps>
+        <developerName>Transfer_To_Agent</developerName>
+        <isPlaceholderDialog>false</isPlaceholderDialog>
+        <label>Transfer To Agent</label>
+        <showInFooterMenu>false</showInFooterMenu>
+    </botDialogs>
+    <citationsEnabled>false</citationsEnabled>
+    <company>Your company specializes in providing customer relationship management (CRM) software and applications. Its solutions, including Sales Center and Service Center, help businesses manage customer interactions and streamline processes.</company>
+    <conversationDefinitionPlanners>
+        <genAiPlannerName>Prod_Specialist</genAiPlannerName>
+    </conversationDefinitionPlanners>
+    <conversationVariables>
+        <dataType>Text</dataType>
+        <description>This variable may also be referred to as VerifiedCustomerId</description>
+        <developerName>VerifiedCustomerId</developerName>
+        <includeInPrompt>false</includeInPrompt>
+        <label>VerifiedCustomerId</label>
+        <visibility>Internal</visibility>
+    </conversationVariables>
+    <entryDialog>Welcome</entryDialog>
+    <intentDisambiguationEnabled>false</intentDisambiguationEnabled>
+    <intentV3Enabled>false</intentV3Enabled>
+    <knowledgeActionEnabled>false</knowledgeActionEnabled>
+    <knowledgeFallbackEnabled>false</knowledgeFallbackEnabled>
+    <role>The AI Product Specialist assists customers and employees with product-related inquiries, guides users through features, and identifies potential product gaps. They log feature requests, provide relevant gap information, and ensure users are informed.</role>
+    <smallTalkEnabled>false</smallTalkEnabled>
+    <toneType>Casual</toneType>
+</BotVersion>

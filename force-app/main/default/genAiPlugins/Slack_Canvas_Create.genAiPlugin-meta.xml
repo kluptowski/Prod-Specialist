@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <canEscalate>false</canEscalate>
+    <description>This topic is about creating and updating Slack Canvases when the user wants to organize information into a document. It also helps the user define the format or structure of the document.</description>
+    <developerName>Slack_Canvas_Create</developerName>
+    <genAiFunctions>
+        <functionName>Slack__CreateSlackCanvas</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>Slack__UpdateSlackCanvas</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>Take all agent comment out of the canvas creation or updates</description>
+        <developerName>instruction_takeallage0</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_takeallage0</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>If the user request to create a canvas, always create a new canvas document</description>
+        <developerName>instruction_iftheuserr1</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_iftheuserr1</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>If the user request to update the canvas, use the canvas from the context. Only add the content requested by the user, do not send the entire content again.</description>
+        <developerName>instruction_iftheuserr2</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_iftheuserr2</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Ask the user what the canvas should be named unless its implied by the command</description>
+        <developerName>instruction_asktheuser3</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_asktheuser3</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Slack Canvas Create</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Your job is to create or update Slack canvases with the information the user needs. The user may ask you to format the document.</scope>
+</GenAiPlugin>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <canEscalate>false</canEscalate>
+    <description>This topic is for users seeking a deeper understanding of salesforce products, including its concepts, features, and theoretical knowledge. The agent should classify requests here when users want clear, summarized answers and an opportunity to explore topics further through conversation, rather than receiving exhaustive information all at once.</description>
+    <developerName>Product_Knowledge</developerName>
+    <genAiFunctions>
+        <functionName>EmployeeCopilot__AnswerQuestionsWithKnowledge</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>Always limit responses to one or two short sections with no more than three bullet points each.</description>
+        <developerName>instruction_alwayslimi0</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_alwayslimi0</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Never include excessive details; prioritize clarity and brevity.</description>
+        <developerName>instruction_neverinclu1</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_neverinclu1</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>If the user requests additional details, provide only the requested information in the next response to maintain focus.</description>
+        <developerName>instruction_iftheuserr2</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_iftheuserr2</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Always define technical terms in simple language and provide links to additional materials for further exploration, but avoid embedding too many links in a single response.</description>
+        <developerName>instruction_alwaysdefi3</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_alwaysdefi3</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Encourage interaction by asking follow-up questions to keep the conversation engaging and prevent overwhelming the user.</description>
+        <developerName>instruction_encouragei4</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_encouragei4</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Product Knowledge</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Your job is to provide summarized insights about Salesforce product&apos;s concepts and features while keeping responses concise and user-friendly. You guide the user by answering their questions, summarizing key points, and offering links to relevant Knowledge base materials for further exploration.</scope>
+</GenAiPlugin>

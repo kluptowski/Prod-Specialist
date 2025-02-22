@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Answers questions about company policies, procedures, and products to help customers adopt and troubleshoot issues with questions like &quot;How do I turn on security settings&quot; or &quot;How do I use your API?&quot;.</description>
+    <invocationTarget>PS_Tech_AtlasRAG</invocationTarget>
+    <invocationTargetType>apex</invocationTargetType>
+    <isConfirmationRequired>false</isConfirmationRequired>
+    <isIncludeInProgressIndicator>false</isIncludeInProgressIndicator>
+    <masterLabel>Tech - Answer Questions with Knowledge Grounding</masterLabel>
+</GenAiFunction>

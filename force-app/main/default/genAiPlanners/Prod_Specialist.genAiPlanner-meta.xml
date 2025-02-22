@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlanner xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>With the Product Specialist agent, users can ask product questions and receive answers. Users can log a product gap if a feature isn&apos;t available, or search for similar product gaps.</description>
+    <genAiFunctions>
+        <genAiFunctionName>EmployeeCopilot__AnswerQuestionsWithKnowledge</genAiFunctionName>
+    </genAiFunctions>
+    <genAiPlugins>
+        <genAiPluginName>Connect_to_Expert_with_Slack_DM</genAiPluginName>
+    </genAiPlugins>
+    <genAiPlugins>
+        <genAiPluginName>Log_Product_Gap</genAiPluginName>
+    </genAiPlugins>
+    <genAiPlugins>
+        <genAiPluginName>Product_Knowledge</genAiPluginName>
+    </genAiPlugins>
+    <genAiPlugins>
+        <genAiPluginName>Search_Slack_Messages</genAiPluginName>
+    </genAiPlugins>
+    <genAiPlugins>
+        <genAiPluginName>Slack_Canvas_Create</genAiPluginName>
+    </genAiPlugins>
+    <genAiPlugins>
+        <genAiPluginName>Suggest_Trailhead_Modules_via_Web_API</genAiPluginName>
+    </genAiPlugins>
+    <masterLabel>Prod Specialist</masterLabel>
+    <plannerType>AiCopilot__ReAct</plannerType>
+</GenAiPlanner>

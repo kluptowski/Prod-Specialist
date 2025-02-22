@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <canEscalate>false</canEscalate>
+    <description>This topic handles inquiries regarding the availability of specific features in Salesforce and related products based on the assigned data library knowledge</description>
+    <developerName>Log_Product_Gap</developerName>
+    <genAiFunctions>
+        <functionName>Create_a_Product_Gap_Case_Running_User</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>EmployeeCopilot__AnswerQuestionsWithKnowledge</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>Respond only if the feature is supported or not when the user asks, without offering or suggesting any action.</description>
+        <developerName>instruction_respondonl0</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_respondonl0</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>If the user requests to log a product gap, then create a case.</description>
+        <developerName>instruction_iftheuserr2</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_iftheuserr2</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Ensure new cases have a subject prefixed with &quot;Product Gap&quot; and include a clear title and helpful description.</description>
+        <developerName>instruction_ensurenewc3</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_ensurenewc3</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>If no information exists in the document, explain that the feature is not supported using Knowledge base information.</description>
+        <developerName>instruction_ifnoinform4</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_ifnoinform4</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Do not offer to log a product gap unless the user explicitly requests it.</description>
+        <developerName>instruction_donotoffer5</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_donotoffer5</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>After creating a case, return the CaseLink</description>
+        <developerName>instruction_aftercreat1</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_aftercreat1</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Log Product Gap</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Your job is to check if Salesforce and related products already has the feature the user is asking for. You will use the data library to know whats available. You can also log/create product gaps upon request for features that aren&apos;t available.</scope>
+</GenAiPlugin>

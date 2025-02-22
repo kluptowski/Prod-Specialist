@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <canEscalate>false</canEscalate>
+    <description>This topic is for users searching for specific information within Slack messages. The agent should classify requests here when users ask to find messages or channels related to particular keywords or topics in Slack.</description>
+    <developerName>Search_Slack_Messages</developerName>
+    <genAiFunctions>
+        <functionName>Slack__SearchSlack</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>Always summarize the Slack search results in 1–2 sentences, covering the main themes or findings from the messages. Do not list the messages in the summary.</description>
+        <developerName>instruction_alwayssumm0</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_alwayssumm0</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>If the user asks for more details, ask them whether they prefer channel details or individual messages.</description>
+        <developerName>instruction_iftheusera1</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_iftheusera1</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>If the user requests channel details, provide the channel links in the format: #channelName : https://app.slack.com/client/&lt;team&gt;/&lt;channelId&gt;. Do not include additional details.</description>
+        <developerName>instruction_iftheuserr2</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_iftheuserr2</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>If the user requests message details, list the messages in the format: @username : message. Link. Do not add labels, headings, or extra information.</description>
+        <developerName>instruction_iftheuserr3</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_iftheuserr3</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Do not use Slack permalinks for channel links; always use the format: https://app.slack.com/client/&lt;team&gt;/&lt;channelId&gt;.</description>
+        <developerName>instruction_donotusesl4</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_donotusesl4</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Always include the @username in the message link structure when providing message details.</description>
+        <developerName>instruction_alwaysincl5</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_alwaysincl5</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Never provide message or channel details unless the user explicitly asks for them after the summary.</description>
+        <developerName>instruction_neverprovi6</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_neverprovi6</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Always clarify the user’s preference for channel or message details before providing links, ensuring the interaction stays user-driven.</description>
+        <developerName>instruction_alwaysclar7</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_alwaysclar7</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Search Slack Messages</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Your job is to search Slack messages for the specified keywords, provide a concise summary of the results, and, if requested, offer links to relevant channels or messages for more details.</scope>
+</GenAiPlugin>

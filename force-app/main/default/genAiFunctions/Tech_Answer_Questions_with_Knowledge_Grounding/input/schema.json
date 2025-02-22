@@ -1,0 +1,21 @@
+{
+  "required" : [ "query", "url" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "query" : {
+      "title" : "query",
+      "description" : "Required. A string created by generative AI to be used in the knowledge article search.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "url" : {
+      "title" : "url",
+      "description" : "Required. Page URL.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

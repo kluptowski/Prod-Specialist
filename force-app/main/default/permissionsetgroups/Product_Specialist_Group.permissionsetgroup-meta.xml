@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>PS + Data Cloud + Prompt</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Product Specialist Group</label>
+    <permissionSets>AF_Product_Specialist_Perms</permissionSets>
+    <permissionSets>force__EinsteinGPTPromptTemplateUser</permissionSets>
+    <permissionSets>force__GenieUserEnhancedSecurity</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

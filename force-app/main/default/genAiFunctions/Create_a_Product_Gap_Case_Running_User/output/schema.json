@@ -1,0 +1,25 @@
+{
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "CaseLink" : {
+      "title" : "CaseLink",
+      "description" : "Link to the object that was created",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isDisplayable" : false,
+      "copilotAction:isUsedByPlanner" : true
+    },
+    "case" : {
+      "title" : "case",
+      "description" : "New case created",
+      "lightning:type" : "lightning__recordInfoType",
+      "lightning:sObjectInfo" : {
+        "apiName" : "Case"
+      },
+      "lightning:isPII" : false,
+      "copilotAction:isDisplayable" : true,
+      "copilotAction:isUsedByPlanner" : true
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

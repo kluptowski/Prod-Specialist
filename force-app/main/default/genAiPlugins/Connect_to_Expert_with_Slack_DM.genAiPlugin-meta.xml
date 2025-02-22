@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <canEscalate>false</canEscalate>
+    <description>This topic covers scenarios where users requires connecting with another user in slack. The connection could be from an inquiring user to an &quot;expert&quot;. The focus is on facilitating a smooth handoff via Slack Direct Messages.</description>
+    <developerName>Connect_to_Expert_with_Slack_DM</developerName>
+    <genAiFunctions>
+        <functionName>Slack__GetSlackUser</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>Slack__SendSlackDirectMessage</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>Start a conversation in slack between slack users.  Make sure you have a userid and message.</description>
+        <developerName>instruction_startaconv0</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_startaconv0</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>In the Slack message create a nice introduction to the user and expert. This should be used as the message input.</description>
+        <developerName>instruction_intheslack1</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_intheslack1</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Your job is to receive a request from a user to send a DM or direct message or to send a message in slack or to DM someone. Use the userid and message to send in a message.
+
+The DM should be between the running user in slack and also with the expert, who we are defining as the slack user with the ID of U06JFB0F20G.</description>
+        <developerName>instruction_yourjobist2</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_yourjobist2</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Users will ask things such as &quot;send a dm&quot; &quot;dm&quot; &quot;send a message&quot; &quot;send a direct message&quot; &quot;connect me&quot; &quot;connect me with an expert&quot; &quot;who can i talk to about&quot; -- all of these and similar sounding utterances should flag this topic and run its assigned actions</description>
+        <developerName>instruction_userswilla3</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_userswilla3</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>You are to send a message to the userId - the message input should be implied based on the context of the conversation or it will be provided by the user in the command. As a fallback and only if you absolutely have to, ask the end user what the message should say</description>
+        <developerName>instruction_youaretose4</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_youaretose4</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Connect to Expert with Slack DM</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Your job is to connect users with an appropriate expert via Slack direct message and provide context for the expert and a cordial greeting.</scope>
+</GenAiPlugin>
