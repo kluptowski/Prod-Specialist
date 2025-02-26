@@ -5,7 +5,7 @@
 		<name>ApexClass</name>
 	</types>
 	<types>
-		<members>Product_Specialist</members>
+		<members>Product_Expert_Agent</members>
 		<name>Bot</name>
 	</types>
 	<types>
@@ -26,7 +26,7 @@
 		<name>GenAiFunction</name>
 	</types>
 	<types>
-		<members>Prod_Specialist</members>
+		<members>Product_Expert_Agent</members>
 		<name>GenAiPlanner</name>
 	</types>
 	<types>

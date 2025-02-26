@@ -6,13 +6,13 @@
         <botSteps>
             <botMessages>
                 <message>Hi, I&apos;m an AI service assistant. How can I help you?</message>
-                <messageIdentifier>cb96694c-1699-4b7f-84c8-567a26061c01</messageIdentifier>
+                <messageIdentifier>fafea18a-181a-40c7-b8e2-cdbc19c7fd5f</messageIdentifier>
             </botMessages>
-            <stepIdentifier>04f88761-a534-4ef4-9094-c9e1c1d36be0</stepIdentifier>
+            <stepIdentifier>8f2c4742-56d5-4f5f-96f9-6b95164fae48</stepIdentifier>
             <type>Message</type>
         </botSteps>
         <botSteps>
-            <stepIdentifier>eae003f5-9f03-4c33-80c2-bd461b82b81c</stepIdentifier>
+            <stepIdentifier>c0add67e-07f7-4547-be93-e1419de18332</stepIdentifier>
             <type>Wait</type>
         </botSteps>
         <developerName>Welcome</developerName>
@@ -24,13 +24,13 @@
         <botSteps>
             <botMessages>
                 <message>Sorry, it looks like something has gone wrong.</message>
-                <messageIdentifier>21d05cd5-b367-401c-85a2-95132f2906d6</messageIdentifier>
+                <messageIdentifier>0208ef5f-b1e3-4d10-9bb4-66cc67c15c7b</messageIdentifier>
             </botMessages>
-            <stepIdentifier>896afcef-f929-4f26-b026-12bbd2c9ecdb</stepIdentifier>
+            <stepIdentifier>fcc1e435-d05f-42db-b2d8-e4f42e2307ae</stepIdentifier>
             <type>Message</type>
         </botSteps>
         <botSteps>
-            <stepIdentifier>c9f92105-5719-437c-be06-8bc07659b99c</stepIdentifier>
+            <stepIdentifier>325847c5-ceb9-454f-85b2-665417423fe4</stepIdentifier>
             <type>Wait</type>
         </botSteps>
         <developerName>Error_Handling</developerName>
@@ -42,16 +42,16 @@
         <botSteps>
             <botMessages>
                 <message>One moment while I connect you to the next available service representative.</message>
-                <messageIdentifier>0a72c8f2-d968-4dfc-8117-9b65db6671db</messageIdentifier>
+                <messageIdentifier>481d179c-5e98-4052-8af7-f400664d36b8</messageIdentifier>
             </botMessages>
-            <stepIdentifier>9f541993-211f-49ed-8c80-1d48e70b35a6</stepIdentifier>
+            <stepIdentifier>617cc3ae-a040-422a-bd3f-1de7145ad801</stepIdentifier>
             <type>Message</type>
         </botSteps>
         <botSteps>
             <conversationSystemMessage>
                 <type>Transfer</type>
             </conversationSystemMessage>
-            <stepIdentifier>687135c8-c7e7-49f2-a05b-bf54237c6634</stepIdentifier>
+            <stepIdentifier>3c343f17-d86a-4afb-b66f-207e859ca35e</stepIdentifier>
             <type>SystemMessage</type>
         </botSteps>
         <developerName>Transfer_To_Agent</developerName>
@@ -62,7 +62,7 @@
     <citationsEnabled>false</citationsEnabled>
     <company>Your company specializes in providing customer relationship management (CRM) software and applications. Its solutions, including Sales Center and Service Center, help businesses manage customer interactions and streamline processes.</company>
     <conversationDefinitionPlanners>
-        <genAiPlannerName>Prod_Specialist</genAiPlannerName>
+        <genAiPlannerName>Product_Expert_Agent</genAiPlannerName>
     </conversationDefinitionPlanners>
     <conversationVariables>
         <dataType>Text</dataType>

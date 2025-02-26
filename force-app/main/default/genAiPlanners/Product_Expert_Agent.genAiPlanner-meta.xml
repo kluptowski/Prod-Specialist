@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenAiPlanner xmlns="http://soap.sforce.com/2006/04/metadata">
-    <description>With the Product Specialist agent, users can ask product questions and receive answers. Users can log a product gap if a feature isn&apos;t available, or search for similar product gaps.</description>
+    <description>With the Product Expert agent, users can ask product questions and receive answers. Users can log a product gap if a feature isn&apos;t available, or search for similar product gaps.</description>
     <genAiFunctions>
         <genAiFunctionName>EmployeeCopilot__AnswerQuestionsWithKnowledge</genAiFunctionName>
     </genAiFunctions>
@@ -22,6 +22,6 @@
     <genAiPlugins>
         <genAiPluginName>Suggest_Trailhead_Modules_via_Web_API</genAiPluginName>
     </genAiPlugins>
-    <masterLabel>Prod Specialist</masterLabel>
+    <masterLabel>Product Expert Agent</masterLabel>
     <plannerType>AiCopilot__ReAct</plannerType>
 </GenAiPlanner>
